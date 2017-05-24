@@ -1,0 +1,3 @@
+include ':app', ':sliding_menu_lib', ':indicator-library', ':RecyclerViewDemo', ':numberaddsubview', 'MaterialRefreshLayout_sample', ':MaterialRefreshLayout-library', ':slidingmenu-library'
+
+

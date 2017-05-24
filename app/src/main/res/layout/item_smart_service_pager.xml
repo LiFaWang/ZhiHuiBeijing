@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:background="@drawable/item_smart_service_bg_selector"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/iv_product"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/news_pic_default"
+            android:layout_width="100dp"
+            android:layout_height="180dp"/>
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:id="@+id/ll_dd"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_product"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name"
+                android:text="5555555555555"
+                android:textSize="16sp"
+                android:lines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_marginTop="10dp"
+                android:background="#66000000"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_centerVertical="true"
+                    android:text="￥5979"
+                    android:textSize="16sp"
+                    android:textColor="#f00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/btn_buy"
+                    android:text="立即购买"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:background="@drawable/btn_buy_selector"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

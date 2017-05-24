@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+              <!--android:background="#0f0"-->
+
+
+    <com.it.cn.zhihuibeijing.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.it.cn.zhihuibeijing.view.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bottom_tab_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rab_home"
+            style="@style/Botom_Tab_Style"
+            android:drawableTop="@drawable/tab_home_selecter"
+            android:checked="true"
+            android:text="首页"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rab_news"
+            style="@style/Botom_Tab_Style"
+            android:drawableTop="@drawable/tab_news_selecter"
+            android:text="新闻中心"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rab_smart"
+            style="@style/Botom_Tab_Style"
+            android:drawableTop="@drawable/tab_smart_selecter"
+            android:text="商城"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rab_gov"
+            style="@style/Botom_Tab_Style"
+            android:drawableTop="@drawable/tab_gov_selecter"
+            android:text="政务"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rab_set"
+            style="@style/Botom_Tab_Style"
+            android:drawableTop="@drawable/tab_setting_selecter"
+            android:text="设置"
+            />
+    </RadioGroup>
+
+
+</LinearLayout>
