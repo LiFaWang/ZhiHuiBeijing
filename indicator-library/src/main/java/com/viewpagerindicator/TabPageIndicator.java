@@ -289,4 +289,10 @@ public class TabPageIndicator extends HorizontalScrollView implements PageIndica
             return mIndex;
         }
     }
+
+    @Override
+    public boolean dispatchTrackballEvent(MotionEvent event) {
+        getParent().requestDisallowInterceptTouchEvent(true);
+        return super.dispatchTrackballEvent(event);
+    }
 }

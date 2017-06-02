@@ -91,7 +91,7 @@ public class LeftMenuFragment extends BaseFragment {
 
     }
 
-    class LeftMenuAdapter extends BaseAdapter {
+  private class LeftMenuAdapter extends BaseAdapter {
 
         @Override
         public int getCount() {

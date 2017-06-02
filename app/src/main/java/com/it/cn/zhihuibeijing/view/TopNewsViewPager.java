@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 
 /**
+ *
  * Created by Administrator on 2017/2/9.
  */
 
@@ -31,17 +32,17 @@ public class TopNewsViewPager extends ViewPager {
 
 
     @Override
-    protected boolean dispatchGenericFocusedEvent(MotionEvent event) {
+    public boolean dispatchTouchEvent(MotionEvent ev) {
         getParent().requestDisallowInterceptTouchEvent(true);
-        switch (event.getAction()) {
+        switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                startx = (int) event.getX();
-                starty = (int) event.getY();
+                startx = (int) ev.getX();
+                starty = (int) ev.getY();
 
                 break;
             case MotionEvent.ACTION_MOVE:
-                int endx = (int) event.getX();
-                int endy = (int) event.getY();
+                int endx = (int) ev.getX();
+                int endy = (int) ev.getY();
                 int dx = endx - startx;
                 int dy = endy - starty;
                 if(Math.abs(dy)<Math.abs(dx)){
@@ -79,6 +80,6 @@ public class TopNewsViewPager extends ViewPager {
 
                 break;
         }
-        return super.dispatchGenericFocusedEvent(event);
+        return super.dispatchTouchEvent(ev);
     }
 }

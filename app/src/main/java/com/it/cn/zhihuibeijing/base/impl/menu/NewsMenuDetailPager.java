@@ -56,7 +56,9 @@ public class NewsMenuDetailPager extends BaseMenuDetailPager implements ViewPage
         //设置滑动监听
 //        mViewPager.setOnPageChangeListener(this);
         mIndicator.setOnPageChangeListener(this);
+        mViewPager.setCurrentItem(tempPosition);
     }
+    private int tempPosition=0;
 
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -68,19 +70,24 @@ public class NewsMenuDetailPager extends BaseMenuDetailPager implements ViewPage
         System.out.println("当前位置"+position);
         if(position==0){
             //开启侧边栏
+
+
             setSlidingMenuEnable(true);
+
+
         }else {
             //禁用侧边栏
             setSlidingMenuEnable(false);
 
         }
+        tempPosition=position;
 
     }
 
     @Override
     public void onPageScrollStateChanged(int state) {
 
-
+      System.out.println("state"+state);
     }
     /**
      * 开启或者禁用侧边栏

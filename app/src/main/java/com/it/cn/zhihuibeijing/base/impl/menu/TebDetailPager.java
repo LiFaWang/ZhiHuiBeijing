@@ -207,6 +207,7 @@ public class TebDetailPager extends BaseMenuDetailPager {
             mTopNews = newsTabBean.data.topnews;
             if(mTopNews!=null){
 //           System.out.println("laileee//9nnkk");
+
                 mViewPager.setAdapter(new TopNewsAdapter());
                 mIndicator.setViewPager(mViewPager);
                 mIndicator.setSnap(true);//快照方式展示

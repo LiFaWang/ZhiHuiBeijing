@@ -59,18 +59,13 @@ public class SplashActivity extends Activity {
                 boolean is_first_enter = PrefUtils.getBoolean(SplashActivity.this, "is_first_enter", true);
                 if(is_first_enter){
                     //新手引导页
-
                     intent = new Intent(getApplicationContext(),GuideActivty.class);
-
                 }else {
                     intent = new Intent(getApplicationContext(),MainActivity.class);
-
                 }
                 startActivity(intent);
                 finish();
-
             }
-
             @Override
             public void onAnimationRepeat(Animation animation) {
 
